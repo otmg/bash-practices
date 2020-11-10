@@ -69,9 +69,9 @@ type echo
 clear
 
 # enable print all executed commands to the console
-set +x
-# disable
 set -x
+# disable
+set +x
 
 # set editor
 set -o emacs
