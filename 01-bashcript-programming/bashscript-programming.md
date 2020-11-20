@@ -341,5 +341,32 @@ foo -f --tail 10
 foo --follow --tail 10
 ```
 
+# Sourcing
+Sourcing a file is different from execution, in that all commands are evaluated within the context of the current
+bash session - this means that any variables, function, or aliases defined will persist throughout your session.
+
+Create the file you wish to source sourceme.sh
+```bash
+#!/bin/bash
+export A="hello_world"
+alias say_hi="echo Hi"
+say_hello() {
+  echo Hello
+}
+```
+
+```bash
+source sourceme.sh
+```
+
+```bash
+echo $A
+# hello_world
+sayHi
+# Hi
+sayHello
+# Hello
+```
+
 # References
 [Bash Notes for Professionals book](https://goalkicker.com/BashBook/)
