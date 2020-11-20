@@ -63,11 +63,10 @@ type echo
 # echo is a shell builtin
 ```
 
-# CLI tips and tricks
-```bash
-# clear the console
-clear
+# Quoting – single vs double quotes.
 
+# Editor mode
+```bash
 # enable print all executed commands to the console
 set -x
 # disable
