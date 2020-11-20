@@ -1,0 +1,11 @@
+00-introduction
+01-bashcript-programming
+02-file-system
+03-networking
+04-package-management
+06-process-management
+06-user-information
+07-command-substitution
+file.txt
+practice
+README.md
